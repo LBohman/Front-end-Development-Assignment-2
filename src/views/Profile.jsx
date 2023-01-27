@@ -1,19 +1,33 @@
+import { useEffect } from "react";
 import ProfileActions from "../components/Profile/ProfileActions";
-import ProfileHeader from "../components/Profile/ProfileHeader";
 import ProfileTranslationHistory from "../components/Profile/ProfileHistory";
 import { useUser } from "../context/UserContext";
 import withAuth from "../hoc/withAuth";
+import "./Profile.css";
 
 const Profile = () => {
 
-    const { user } = useUser();
+    const { user, setUser } = useUser();
+
+    useEffect(() => {
+    }, [ setUser, user.id ]);
+
+    // EVERYTHING JUST BREAKS
+    // const latestTenTranslations = user.translations.splice(-10).reverse();
+    // console.log(latestTenTranslations);
+    // const translationList = latestTen.map(
+    //     (translation, index) => <ProfileHistoryItem key={ index + "-" + translation } phrase={ translation } />
+    // )
 
     return (
         <>
-            <h1>Profile</h1>
-            <ProfileHeader username={ user.username } />
-            <ProfileActions />
-            <ProfileTranslationHistory translations={ user.translations } />
+            <div className="profile-wrapper">
+                <div className="profile-container">
+                    <h1>Welcome, {user.username}</h1>
+                    <ProfileActions />
+                </div>
+                <ProfileTranslationHistory translations={ user.translations } />
+            </div>
         </>
     )
 }

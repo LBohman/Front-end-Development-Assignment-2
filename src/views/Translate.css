@@ -1,0 +1,23 @@
+.translate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.translate-sign-display {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 80%;
+
+    background-color: var(--off-white);
+    border-radius: 15px;
+    padding: 1.2rem;
+    border-bottom: 20px solid var(--purple);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+
+    font-family: 'Sanchez', serif;
+}

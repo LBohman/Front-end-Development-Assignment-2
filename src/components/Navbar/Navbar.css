@@ -1,0 +1,45 @@
+.navbar {
+    background-color: var(--yellow);
+    grid-area: nav;
+    border-bottom: var(--yellow-dark) solid 3px;
+    color: var(--off-white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-header {
+    margin: 1.5rem 3.5rem;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 10px;
+    list-style: none;
+}
+
+.navbar-list-item {
+    padding: 1rem;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 10px;
+    color: var(--off-white);
+    font-family: 'Sanchez', serif;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.navbar-list-item > a {
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
+.navbar-list-item > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 40%;;
+
+    font-family: "Sanchez", cursive;
+    color: var(--off-white);
+}

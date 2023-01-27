@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Sanchez&display=swap');
+
+:root {
+    --yellow: #ffc75f;
+    --yellow-dark: #e7b355;
+    --purple: #845ec2;
+    --off-white: #fcfcfc;
+    /* Inputs */
+    --light-grey: #efefef;
+    /* Text */
+    --grey: #969696;
+}
+
+body {
+    background-color: var(--yellow);
+}
+
+.App {
+    
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "nav"
+    "content";
+}
+
+.mainContent {
+    margin: 0 3.5rem;
+    height: 100%;
+}

@@ -1,0 +1,21 @@
+.profile-actions-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.profile-actions-list-item {
+    margin-right: 20px;
+}
+
+.profile-actions-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 10px;
+    color: var(--off-white);
+    font-family: 'Sanchez', serif;
+    font-size: 1rem;
+}

@@ -1,0 +1,31 @@
+.translate-form-fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: var(--light-grey);
+    border: 4px solid var(--off-white);
+    border-radius: 100px;
+    margin: 2rem;
+}
+
+.translate-form-input {
+    background-color: var(--light-grey);
+    border: none;
+    font-family: 'Sanchez', serif;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    padding: 10px 50px 10px 5px;
+    min-width: 40rem;
+}
+
+.translate-form-button {
+    padding: 1rem;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 10px;
+    color: var(--off-white);
+    font-family: 'Sanchez', serif;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}

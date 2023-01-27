@@ -1,0 +1,13 @@
+.login-page-header {
+    color: var(--off-white);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.login-page-sub-header {
+    color: var(--off-white);
+    font-family: 'Sanchez', serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
