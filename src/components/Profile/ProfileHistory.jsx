@@ -3,7 +3,7 @@ import "./ProfileHistory.css";
 
 const ProfileTranslationHistory = ({ translations }) => {
 
-    const translationList = translations.map(
+    const translationList = translations.slice(-10).reverse().map(
         (translation, index) => <ProfileHistoryItem key={ index + "-" + translation } phrase={ translation } />
         );
 

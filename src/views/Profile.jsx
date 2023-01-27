@@ -12,13 +12,6 @@ const Profile = () => {
     useEffect(() => {
     }, [ setUser, user.id ]);
 
-    // EVERYTHING JUST BREAKS
-    // const latestTenTranslations = user.translations.splice(-10).reverse();
-    // console.log(latestTenTranslations);
-    // const translationList = latestTen.map(
-    //     (translation, index) => <ProfileHistoryItem key={ index + "-" + translation } phrase={ translation } />
-    // )
-
     return (
         <>
             <div className="profile-wrapper">
