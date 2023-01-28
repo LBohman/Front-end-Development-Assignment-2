@@ -10,36 +10,35 @@ import { storageSave } from "../utils/storage";
 import "./Translate.css";
 
 const Translate = () => {
-
   const { user, setUser } = useUser();
 
   const [translation, setTranslation] = useState("");
-  useEffect(() => {
-  }, [translation]);
+
+  useEffect(() => {}, [translation]);
 
   const onSubmit = async (inputValue) => {
     setTranslation(inputValue);
     const [error, updatedUser] = await saveTranslation(user, inputValue);
     if (error !== null) {
-      return
+      return;
     }
 
     // Keep UI state and server state in sync
-    storageSave(STORAGE_KEY_USER, updatedUser)
+    storageSave(STORAGE_KEY_USER, updatedUser);
     // Update context state
     setUser(updatedUser);
   };
 
   return (
     <>
-    <div className="translate-container">
-      <section>
-        <TranslateInput onSubmit={onSubmit} />
-      </section>
-      <section className="translate-sign-display">
-        <TranslateSignDisplay letter={translation} />
-      </section>
-    </div>
+      <div className="translate-container">
+        <section>
+          <TranslateInput onSubmit={onSubmit} />
+        </section>
+        <section className="translate-sign-display">
+          <TranslateSignDisplay letter={translation} />
+        </section>
+      </div>
     </>
   );
 };
